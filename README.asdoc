@@ -1,0 +1,115 @@
+= Using Github for Open Source Software Development
+
+
+
+
+== Need?
+
+Do you need to collaborate with a team?
+Are you working on a project?
+Have you recently discovered that you pretty much need to be on GitHub if you want anyone to take you seriously in tech?
+
+
+cloning an existing repository
+creating a branch, making changes
+creating a pull request
+
+how to find your terminal, use terminal commands, and edit a markdown (.md) file!
+
+mostly used for code
+Word documents or Final Cut projects. Think of it as a filing system for every draft of a document.
+
+distributed version control systems like Git
+
+== What is Github?
+
+. *GitHub* is a *Git* repository hosting service, but it adds many of its own features.
+. At the heart of GitHub is Git, an open source project started by Linux creator Linus Torvalds.
+link:https://help.github.com/en/github[github]
+
+== What is Git?
+
+. version control system
+. Git is a mature, actively maintained open source project originally developed in 2005 by Linus Torvalds, the famous creator of the Linux operating system kernel
+. A staggering number of software projects rely on Git for version control, including commercial projects as well as open source.
+. distributed architecture, Git is an example of a DVCS (hence Distributed Version Control System)
+
+
+== Key Features?
+
+. *3 Key features:* Fork, pull request and merge
+  ** The flagship functionality of GitHub is “forking” – copying a repository from one user’s account to another
+  ** This enables you to take a project that you don’t have write access to and modify it under your own account
+  ** If you make changes you’d like to share, you can send a notification called a “pull request” to the original owner
+  ** That user can then, with a click of a button, merge the changes found in your repo with the original repo
+
+Before GitHub, if you wanted to contribute to an open source project you had to manually download the project’s source code, make your changes locally, create a list of changes called a “patch” and then e-mail the patch to the project’s maintainer. The maintainer would then have to evaluate this patch, possibly sent by a total stranger, and decide whether to merge the changes.
+
+
+* Contribution to the other Open source project
+* Collaboration with others for your Open source project
+* Credit to individual contributors
+* Communication - issues, documentations, wikis, project web-site
+* Catalog - insights, stats - code frequency, traffic, contributors, commits, dependency graph, forks, network
+
+
+* Actions - automation, triggers
+* Security
+
+
+* network effect starts to play a role in GitHub
+  ** When you submit a pull request, the project’s maintainer can see your profile, which includes all of your contributions on GitHub. If your patch is accepted, you get credit on the original site, and it shows up in your profile
+  ** It’s like a resume that helps the maintainer determine your reputation.
+  ** publicly discussed.
+
+== Alternative to github?
+
+. link:https://bitbucket.org/[bitbucket]
+
+
+== Getting Started with Github
+
+* Individual
+* Organization
+
+=== Create a new repository
+
+. *Create a new repo*
++
+[source]
+.or create a new repository on the command line
+----
+echo "# getting-started-with-github" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/skillplot/getting-started-with-github.git
+git push -u origin master
+----
++
+[source]
+.or push an existing repository from the command line
+----
+git remote add origin https://github.com/skillplot/getting-started-with-github.git
+git push -u origin master
+----
++
+NOTE: Recommended to create these files at the root of the project directory: `README.md`, `LICENSE`, and `.gitignore`
+
+. *Install git on system*
+  .. link:https://www.atlassian.com/git/tutorials/install-git[How to install git on linux, Mac OS, Windows]
+    ... link:https://gitforwindows.org/[gitforwindows.org]
+    ... link:https://desktop.github.com/[github desktop for windows]
+
+Tutorial: Getting Started With Github
+
+
+=== Importing old repo to new repo
+
+link:https://github.com/new/import[github import]
+
+
+== References
+
+. link:https://www.atlassian.com/git/tutorials/what-is-git[What is Git]
+. link:https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6[getting-started-with-git-and-github]
